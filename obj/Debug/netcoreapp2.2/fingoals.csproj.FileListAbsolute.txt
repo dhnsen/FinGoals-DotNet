@@ -1,0 +1,14 @@
+C:\Users\admin\Desktop\fingoals\bin\Debug\netcoreapp2.2\fingoals.deps.json
+C:\Users\admin\Desktop\fingoals\bin\Debug\netcoreapp2.2\fingoals.runtimeconfig.json
+C:\Users\admin\Desktop\fingoals\bin\Debug\netcoreapp2.2\fingoals.runtimeconfig.dev.json
+c:\Users\admin\Desktop\fingoals\bin\Debug\netcoreapp2.2\fingoals.dll
+c:\Users\admin\Desktop\fingoals\bin\Debug\netcoreapp2.2\fingoals.pdb
+c:\Users\admin\Desktop\fingoals\obj\Debug\netcoreapp2.2\fingoals.csprojAssemblyReference.cache
+c:\Users\admin\Desktop\fingoals\obj\Debug\netcoreapp2.2\fingoals.csproj.CoreCompileInputs.cache
+c:\Users\admin\Desktop\fingoals\obj\Debug\netcoreapp2.2\fingoals.RazorAssemblyInfo.cache
+c:\Users\admin\Desktop\fingoals\obj\Debug\netcoreapp2.2\fingoals.RazorAssemblyInfo.cs
+c:\Users\admin\Desktop\fingoals\obj\Debug\netcoreapp2.2\fingoals.AssemblyInfoInputs.cache
+c:\Users\admin\Desktop\fingoals\obj\Debug\netcoreapp2.2\fingoals.AssemblyInfo.cs
+c:\Users\admin\Desktop\fingoals\obj\Debug\netcoreapp2.2\fingoals.RazorTargetAssemblyInfo.cache
+c:\Users\admin\Desktop\fingoals\obj\Debug\netcoreapp2.2\fingoals.dll
+c:\Users\admin\Desktop\fingoals\obj\Debug\netcoreapp2.2\fingoals.pdb
