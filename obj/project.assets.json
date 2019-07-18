@@ -12073,30 +12073,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dan\\.nuget\\packages\\": {},
+    "C:\\Users\\dhnsen\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dan\\Desktop\\FinGoals-DotNet\\fingoals.csproj",
+      "projectUniqueName": "C:\\Users\\dhnsen\\Documents\\GitHub\\FinGoals-DotNet\\fingoals.csproj",
       "projectName": "fingoals",
-      "projectPath": "C:\\Users\\Dan\\Desktop\\FinGoals-DotNet\\fingoals.csproj",
-      "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dan\\Desktop\\FinGoals-DotNet\\obj\\",
+      "projectPath": "C:\\Users\\dhnsen\\Documents\\GitHub\\FinGoals-DotNet\\fingoals.csproj",
+      "packagesPath": "C:\\Users\\dhnsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dhnsen\\Documents\\GitHub\\FinGoals-DotNet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\dhnsen\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

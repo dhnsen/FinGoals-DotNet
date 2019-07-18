@@ -51,5 +51,15 @@ namespace FinGoals.Controllers
 
             return SavingsGoal;
         }
+
+        //POST: api/SavingsGoal
+        [HttpPost]
+        public async Task<ActionResult<SavingsGoal>> PostSavingsGoal(SavingsGoal item)
+        {
+            _context.SavingsGoals.Add(item);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetSavingsGoal), new { id = item.Id}, item);
+        }
     }
 }
