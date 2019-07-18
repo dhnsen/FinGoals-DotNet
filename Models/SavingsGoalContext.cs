@@ -1,9 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 
-public class SavingsGoalContext : DbContext 
+namespace FinGoals.Models
 {
-    public SavingsGoalContext(DbContextOptions<SavingsGoalContext> options)
-            : base(options)
+    public class SavingsGoalContext : DbContext
+    {
+        public SavingsGoalContext(DbContextOptions<SavingsGoalContext> options)
+                : base(options)
         {
         }
+
+        public DbSet<SavingsGoal> SavingsGoals { get; set; }
+    }
 }
