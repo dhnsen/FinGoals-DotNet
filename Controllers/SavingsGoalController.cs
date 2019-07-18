@@ -7,7 +7,7 @@ using FinGoals.Models;
 
 namespace FinGoals.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/SavingsGoal")]
     [ApiController]
     public class SavingsGoalController : ControllerBase
     {
