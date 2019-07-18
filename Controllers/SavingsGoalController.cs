@@ -16,6 +16,14 @@ namespace FinGoals.Controllers
         public SavingsGoalController(SavingsGoalContext context)
         {
             _context = context;
+
+            if (_context.SavingsGoals.Count() == 0)
+            {
+                // Create a new SavingsGoal if collection is empty,
+                // which means you can't delete all SavingsGoals.
+                _context.SavingsGoals.Add(new SavingsGoal { Name = "Item1" });
+                _context.SaveChanges();
+            }
         }
 
         // GET: api/SavingsGoal
