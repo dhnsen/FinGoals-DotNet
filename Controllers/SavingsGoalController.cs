@@ -21,7 +21,12 @@ namespace FinGoals.Controllers
             {
                 // Create a new SavingsGoal if collection is empty,
                 // which means you can't delete all SavingsGoals.
-                _context.SavingsGoals.Add(new SavingsGoal { Name = "Item1" });
+                _context.SavingsGoals.Add(new SavingsGoal
+                {
+                    Name = "First Goal",
+                    Description = "This is your first Savings Goal",
+                    Amount = 1.0
+                });
                 _context.SaveChanges();
             }
         }
