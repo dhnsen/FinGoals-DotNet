@@ -59,7 +59,39 @@ namespace FinGoals.Controllers
             _context.SavingsGoals.Add(item);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetSavingsGoal), new { id = item.Id}, item);
+            return CreatedAtAction(nameof(GetSavingsGoal), new { id = item.Id }, item);
+        }
+
+        // PUT: api/Todo/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutSavingsGoal(long id, SavingsGoal item)
+        {
+            if (id != item.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(item).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        // DELETE: api/Todo/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteSavingsGoal(long id)
+        {
+            var savingsGoal = await _context.SavingsGoals.FindAsync(id);
+
+            if (savingsGoal == null)
+            {
+                return NotFound();
+            }
+
+            _context.SavingsGoals.Remove(savingsGoal);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }
