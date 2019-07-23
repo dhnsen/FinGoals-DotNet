@@ -62,7 +62,7 @@ namespace FinGoals.Controllers
             return CreatedAtAction(nameof(GetSavingsGoal), new { id = item.Id }, item);
         }
 
-        // PUT: api/Todo/5
+        // PUT: api/SavingsGoal/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutSavingsGoal(long id, SavingsGoal item)
         {
@@ -77,7 +77,7 @@ namespace FinGoals.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Todo/5
+        // DELETE: api/SavingsGoal/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSavingsGoal(long id)
         {
