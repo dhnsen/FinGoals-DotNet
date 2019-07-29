@@ -31,6 +31,8 @@ namespace FinGoals.Controllers
             }
         }
 
+// when call this form Node, I'm getting an empty body, though postman and browser work fine.
+
         // GET: api/SavingsGoal
         [HttpGet]
         public async Task<ActionResult<IEnumerable<SavingsGoal>>> GetSavingsGoals()
