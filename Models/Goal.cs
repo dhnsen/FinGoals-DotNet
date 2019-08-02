@@ -1,9 +1,7 @@
-using System;
-
 
 namespace FinGoals.Models
 {
-    public class SavingsGoal
+    public class Goal 
     {
         public int Id { get; set; }
         public string UserId { get; set; }

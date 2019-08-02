@@ -7,7 +7,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-FinGoals-D46724FF-D016-4CA4-9307-555ECDFF4B80")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinGoals")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
