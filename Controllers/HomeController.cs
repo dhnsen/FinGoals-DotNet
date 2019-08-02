@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using FinGoals_DotNet.Models;
+using FinGoals.Models;
 
-namespace FinGoals_DotNet.Controllers
+namespace FinGoals.Controllers
 {
     public class HomeController : Controller
     {

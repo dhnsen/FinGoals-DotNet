@@ -14,17 +14,17 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #line 1 "C:\Users\Dan\Desktop\FinGoals-DotNet\Views\_ViewImports.cshtml"
-using FinGoals_DotNet;
+using FinGoals;
 
 #line default
 #line hidden
 #line 2 "C:\Users\Dan\Desktop\FinGoals-DotNet\Views\_ViewImports.cshtml"
-using FinGoals_DotNet.Models;
+using FinGoals.Models;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a0a804a681e19abd19d72697df2fc8a7b08107bc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e66666effa2132601026bb7f7f634e527140f8bf", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

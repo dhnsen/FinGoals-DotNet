@@ -1,6 +1,6 @@
 using System;
 
-namespace FinGoals_DotNet.Models
+namespace FinGoals.Models
 {
     public class ErrorViewModel
     {

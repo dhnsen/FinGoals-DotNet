@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/FinGoals-DotNet/FinGoals-DotNet.csproj",
+                "${workspaceFolder}/FinGoals.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/FinGoals-DotNet/FinGoals-DotNet.csproj",
+                "${workspaceFolder}/FinGoals.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/FinGoals-DotNet/FinGoals-DotNet.csproj",
+                "${workspaceFolder}/FinGoals.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

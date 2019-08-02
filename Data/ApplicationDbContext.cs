@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace FinGoals_DotNet.Data
+namespace FinGoals.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Dan\\Desktop\\FinGoals-DotNet\\FinGoals-DotNet.csproj",
+  "FilePath": "c:\\Users\\Dan\\Desktop\\FinGoals-DotNet\\FinGoals.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2940,16 +2940,11 @@
     ],
     "CSharpLanguageVersion": 703
   },
-  "RootNamespace": "FinGoals_DotNet",
+  "RootNamespace": "FinGoals",
   "Documents": [
     {
       "FilePath": "Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\SavingsGoals\\Edit.cshtml",
-      "TargetPath": "Views\\SavingsGoals\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2963,18 +2958,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\SavingsGoals\\Create.cshtml",
-      "TargetPath": "Views\\SavingsGoals\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Views\\SavingsGoals\\Details.cshtml",
-      "TargetPath": "Views\\SavingsGoals\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2998,11 +2983,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\SavingsGoals\\Index.cshtml",
-      "TargetPath": "Views\\SavingsGoals\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
@@ -3013,8 +2993,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "Views\\SavingsGoals\\Delete.cshtml",
-      "TargetPath": "Views\\SavingsGoals\\Delete.cshtml",
+      "FilePath": "Views\\SavingsGoal\\Index.cshtml",
+      "TargetPath": "Views\\SavingsGoal\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

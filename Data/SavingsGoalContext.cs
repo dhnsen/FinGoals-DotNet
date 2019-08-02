@@ -1,20 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using FinGoals_DotNet.Models;
+using System.Text;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
-namespace FinGoals_DotNet.Data
+namespace FinGoals.Data
 {
-    public class SavingsGoalContext : DbContext
+    public class SavingsGoalContext : IdentityDbContext
     {
-        public DbSet<SavingsGoal> SavingsGoals { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public SavingsGoalContext(DbContextOptions<SavingsGoalContext> options)
+            : base(options)
         {
-            optionsBuilder.UseSqlServer(
-                @"Server=(localdb)\mssqllocaldb;Database=Blogging;Integrated Security=True");
         }
     }
 }
