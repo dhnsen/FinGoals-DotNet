@@ -64,3 +64,8 @@ C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals-DotNet.Vie
 C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals-DotNet.dll
 C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals-DotNet.pdb
 C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals-DotNet.csproj.CopyComplete
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\Razor\Views\SavingsGoals\Create.g.cshtml.cs
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\Razor\Views\SavingsGoals\Delete.g.cshtml.cs
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\Razor\Views\SavingsGoals\Details.g.cshtml.cs
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\Razor\Views\SavingsGoals\Edit.g.cshtml.cs
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\Razor\Views\SavingsGoals\Index.g.cshtml.cs

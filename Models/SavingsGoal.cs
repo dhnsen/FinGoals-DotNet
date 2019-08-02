@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace FinGoals_DotNet.Models
 {
-    public class SavingGoal
+    public class SavingsGoal
     {
         public long Id { get; set; }
         public string UserId { get; set; }
