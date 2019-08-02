@@ -1,4 +1,9 @@
-namespace FinGoals.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace FinGoals_DotNet.Models
 {
     public class SavingsGoal
     {

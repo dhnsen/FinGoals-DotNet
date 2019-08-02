@@ -1,99 +1,153 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FinGoals.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using FinGoals_DotNet.Data;
+using FinGoals_DotNet.Models;
 
-namespace FinGoals.Controllers
+namespace FinGoals_DotNet.Controllers
 {
-    [Route("api/SavingsGoal")]
-    [ApiController]
-    public class SavingsGoalController : ControllerBase
+    public class SavingsGoalController : Controller
     {
         private readonly SavingsGoalContext _context;
 
         public SavingsGoalController(SavingsGoalContext context)
         {
             _context = context;
-
-            if (_context.SavingsGoals.Count() == 0)
-            {
-                // Create a new SavingsGoal if collection is empty,
-                // which means you can't delete all SavingsGoals.
-                _context.SavingsGoals.Add(new SavingsGoal
-                {
-                    Name = "First Goal",
-                    Description = "This is your first Savings Goal",
-                    Amount = 1.0
-                });
-                _context.SaveChanges();
-            }
         }
 
-// when call this form Node, I'm getting an empty body, though postman and browser work fine.
-
-        // GET: api/SavingsGoal
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<SavingsGoal>>> GetSavingsGoals()
+        // GET: SavingsGoals
+        public async Task<IActionResult> Index()
         {
-            return await _context.SavingsGoals.ToListAsync();
+            return View(await _context.SavingsGoals.ToListAsync());
         }
 
-        // GET: api/SavingsGoal/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<SavingsGoal>> GetSavingsGoal(long id)
+        // GET: SavingsGoals/Details/5
+        public async Task<IActionResult> Details(long? id)
         {
-            var SavingsGoal = await _context.SavingsGoals.FindAsync(id);
-
-            if (SavingsGoal == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            return SavingsGoal;
-        }
-
-        //POST: api/SavingsGoal
-        [HttpPost]
-        public async Task<ActionResult<SavingsGoal>> PostSavingsGoal(SavingsGoal item)
-        {
-            _context.SavingsGoals.Add(item);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetSavingsGoal), new { id = item.Id }, item);
-        }
-
-        // PUT: api/SavingsGoal/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutSavingsGoal(long id, SavingsGoal item)
-        {
-            if (id != item.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(item).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        // DELETE: api/SavingsGoal/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteSavingsGoal(long id)
-        {
-            var savingsGoal = await _context.SavingsGoals.FindAsync(id);
-
+            var savingsGoal = await _context.SavingsGoals
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (savingsGoal == null)
             {
                 return NotFound();
             }
 
+            return View(savingsGoal);
+        }
+
+        // GET: SavingsGoals/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: SavingsGoals/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,UserId,Name,Amount,Description,IsComplete")] SavingsGoal savingsGoal)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(savingsGoal);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(savingsGoal);
+        }
+
+        // GET: SavingsGoals/Edit/5
+        public async Task<IActionResult> Edit(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var savingsGoal = await _context.SavingsGoals.FindAsync(id);
+            if (savingsGoal == null)
+            {
+                return NotFound();
+            }
+            return View(savingsGoal);
+        }
+
+        // POST: SavingsGoals/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(long id, [Bind("Id,UserId,Name,Amount,Description,IsComplete")] SavingsGoal savingsGoal)
+        {
+            if (id != savingsGoal.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(savingsGoal);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!SavingsGoalExists(savingsGoal.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(savingsGoal);
+        }
+
+        // GET: SavingsGoals/Delete/5
+        public async Task<IActionResult> Delete(long? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var savingsGoal = await _context.SavingsGoals
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (savingsGoal == null)
+            {
+                return NotFound();
+            }
+
+            return View(savingsGoal);
+        }
+
+        // POST: SavingsGoals/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(long id)
+        {
+            var savingsGoal = await _context.SavingsGoals.FindAsync(id);
             _context.SavingsGoals.Remove(savingsGoal);
             await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
-            return NoContent();
+        private bool SavingsGoalExists(long id)
+        {
+            return _context.SavingsGoals.Any(e => e.Id == id);
         }
     }
 }
