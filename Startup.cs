@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -39,16 +39,18 @@ namespace FinGoals
                 options.UseSqlite(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<SavingsGoalContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("SavingsGoalContext")));
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlite(
+                    Configuration.GetConnectionString("SavingsGoalContext")));
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddDbContext<SavingsGoalContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("SavingsGoalContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
