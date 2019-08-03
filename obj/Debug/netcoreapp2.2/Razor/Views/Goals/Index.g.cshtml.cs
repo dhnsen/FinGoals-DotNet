@@ -13,7 +13,18 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#line 1 "C:\Users\Dan\Desktop\FinGoals-DotNet\Views\_ViewImports.cshtml"
+using FinGoals;
+
+#line default
+#line hidden
+#line 2 "C:\Users\Dan\Desktop\FinGoals-DotNet\Views\_ViewImports.cshtml"
+using FinGoals.Models;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1d7a27a0d49f2ecf6d308ae1da1053da988fcb7c", @"/Views/Goals/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e66666effa2132601026bb7f7f634e527140f8bf", @"/Views/_ViewImports.cshtml")]
     public class Views_Goals_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -42,7 +53,7 @@ namespace AspNetCore
             WriteLiteral("<html>\r\n    ");
             EndContext();
             BeginContext(12, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d7a27a0d49f2ecf6d308ae1da1053da988fcb7c2721", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d7a27a0d49f2ecf6d308ae1da1053da988fcb7c3136", async() => {
                 BeginContext(18, 30, true);
                 WriteLiteral("\r\n        <h1>hello</h1>\r\n    ");
                 EndContext();
