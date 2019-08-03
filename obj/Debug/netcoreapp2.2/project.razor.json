@@ -2941,6 +2941,17 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "FinGoals",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "Views\\Goals\\Details.cshtml",
+      "TargetPath": "Views\\Goals\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Goals\\Index.cshtml",
+      "TargetPath": "Views\\Goals\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.1"
 }

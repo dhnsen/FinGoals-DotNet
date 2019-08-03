@@ -8,11 +8,11 @@ using FinGoals.Models;
 namespace FinGoals.Controllers
 {
 
-    public class GoalController : Controller
+    public class GoalsController : Controller
     {
         private readonly GoalContext _context;
 
-        public GoalController(GoalContext context)
+        public GoalsController(GoalContext context)
         {
             _context = context;
 
@@ -32,26 +32,28 @@ namespace FinGoals.Controllers
             }
         }
 
-        // GET: Goal
+        // GET: Goals
         [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
-        // GET: Goal/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // GET: Goals/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var goal = await _context.Goals.FindAsync(id);
+            var goal = await _context.Goals
+                .FirstOrDefaultAsync(g => g.Id == id);
             if (goal == null)
             {
                 return NotFound();
             }
+
             return View(goal);
         }
     }

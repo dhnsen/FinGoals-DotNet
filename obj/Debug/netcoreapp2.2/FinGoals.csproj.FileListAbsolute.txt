@@ -26,3 +26,13 @@ C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.AssemblyIn
 C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.RazorTargetAssemblyInfo.cache
 C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.dll
 C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.pdb
+C:\Users\Dan\Desktop\FinGoals-DotNet\bin\Debug\netcoreapp2.2\FinGoals.Views.dll
+C:\Users\Dan\Desktop\FinGoals-DotNet\bin\Debug\netcoreapp2.2\FinGoals.Views.pdb
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.TagHelpers.input.cache
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.TagHelpers.output.cache
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.RazorCoreGenerate.cache
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\Razor\Views\Goals\Details.g.cshtml.cs
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\Razor\Views\Goals\Index.g.cshtml.cs
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.RazorTargetAssemblyInfo.cs
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.Views.pdb
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.csproj.CopyComplete
