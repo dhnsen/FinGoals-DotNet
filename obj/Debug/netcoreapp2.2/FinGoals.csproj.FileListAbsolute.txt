@@ -12,3 +12,17 @@ C:\Users\dhnsen\Documents\GitHub\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoal
 C:\Users\dhnsen\Documents\GitHub\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.RazorTargetAssemblyInfo.cache
 C:\Users\dhnsen\Documents\GitHub\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.dll
 C:\Users\dhnsen\Documents\GitHub\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.pdb
+C:\Users\Dan\Desktop\FinGoals-DotNet\bin\Debug\netcoreapp2.2\FinGoals.deps.json
+C:\Users\Dan\Desktop\FinGoals-DotNet\bin\Debug\netcoreapp2.2\FinGoals.runtimeconfig.json
+C:\Users\Dan\Desktop\FinGoals-DotNet\bin\Debug\netcoreapp2.2\FinGoals.runtimeconfig.dev.json
+C:\Users\Dan\Desktop\FinGoals-DotNet\bin\Debug\netcoreapp2.2\FinGoals.dll
+C:\Users\Dan\Desktop\FinGoals-DotNet\bin\Debug\netcoreapp2.2\FinGoals.pdb
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.csprojAssemblyReference.cache
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.RazorAssemblyInfo.cache
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.RazorAssemblyInfo.cs
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.AssemblyInfoInputs.cache
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.AssemblyInfo.cs
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.RazorTargetAssemblyInfo.cache
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.dll
+C:\Users\Dan\Desktop\FinGoals-DotNet\obj\Debug\netcoreapp2.2\FinGoals.pdb
