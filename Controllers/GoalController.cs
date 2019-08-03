@@ -7,9 +7,8 @@ using FinGoals.Models;
 
 namespace FinGoals.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class GoalController : ControllerBase
+
+    public class GoalController : Controller
     {
         private readonly GoalContext _context;
 
@@ -19,8 +18,8 @@ namespace FinGoals.Controllers
 
             if (_context.Goals.Count() == 0)
             {
-                // Create a new TodoItem if collection is empty,
-                // which means you can't delete all TodoItems.
+                // Create a new Goal if collection is empty,
+                // which means you can't delete all Goals.
                 _context.Goals.Add(
                     new Goal
                     {
@@ -33,11 +32,27 @@ namespace FinGoals.Controllers
             }
         }
 
-        // GET: api/Goal
+        // GET: Goal
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Goal>>> GetGoals()
+        public IActionResult Index()
         {
-            return await _context.Goals.ToListAsync();
+            return View();
+        }
+
+        // GET: Goal/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var goal = await _context.Goals.FindAsync(id);
+            if (goal == null)
+            {
+                return NotFound();
+            }
+            return View(goal);
         }
     }
 }
